@@ -1,44 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="NovationLabsLogo512.png" type="image/png">
-    <title>Nova Labs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1D172C;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 {
-            color: #8F66F1;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #8F66F1;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #7a50e0;
-        }
-    </style>
+    <link rel="icon" href="assets/NovationLabsLogo512.png" type="image/png">
+    <title>Novation Labs - Services Informatiques</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to Novation Labs</h1>
-        <p>We are an innovative team working on cutting-edge projects in open-source and technology.</p>
-        <a href="https://github.com/NovationLabs" target="_blank">Visit our GitHub</a>
-    </div>
+
+<body class="dark-mode">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/NovationLabsLogo512.png" alt="Novation Labs Logo">
+                <span class="logo-text">Novation Labs</span>
+            </div>
+
+            <nav>
+                <a href="#services">
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+                        <path d="M9.254 0a4.893 4.893 0 0 1 3.457 8.387L7.12 13.98A3.496 3.496 0 0 1 2.18 9.03L7.773 3.44a2.153 2.153 0 0 1 2.964 0 2.07 2.07 0 0 1 .615 1.481 2.1 2.1 0 0 1-.615 1.492l-5.592 5.59a.69.69 0 0 1-.987 0 .7.7 0 0 1 0-.987l5.59-5.591a.7.7 0 0 0 .234-.54.699.699 0 0 0-1.193-.495L3.197 9.981a2.099 2.099 0 0 0 2.963 2.972l5.592-5.591a3.496 3.496 0 0 0-4.94-4.948l-5.59 5.591a.709.709 0 0 1-1.026-.978l5.591-5.592A4.88 4.88 0 0 1 9.254 0" />
+                    </svg>
+                    Services
+                </a>
+                <a href="#about">
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12">
+                        <path d="M6.473 4.954a2.477 2.477 0 1 0 0-4.954 2.477 2.477 0 0 0 0 4.954M10.485 7.421H2.47A2.175 2.175 0 0 0 .295 9.596v.22c0 1.201.974 2.175 2.175 2.175h8.015a2.175 2.175 0 0 0 2.176-2.175v-.22a2.175 2.175 0 0 0-2.176-2.175M11.61 5.931a2.111 2.111 0 1 0 0-4.222 2.111 2.111 0 0 0 0 4.222M13.054 11.37c.39-.405.606-.947.603-1.509a2.13 2.13 0 0 0-.284-1.078.284.284 0 0 1 .229-.43h1.444a1.83 1.83 0 0 1 1.782 1.371 1.83 1.83 0 0 1-.43 1.746 1.7 1.7 0 0 1-1.233.53h-2.093a.274.274 0 0 1-.265-.274.24.24 0 0 1 .082-.192z" />
+                    </svg>
+                    À propos
+                </a>
+                <a href="#contact" class="cta-button">Contactez-nous</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge">Services IT</span>
+                        <span class="badge">Expertise</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Solutions informatiques <span>innovantes</span> pour votre entreprise
+                    </h1>
+                    <p>
+                        Nous accompagnons les entreprises dans leur transformation digitale avec des services sur mesure et une expertise technique de pointe.
+                    </p>
+                    <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 30px;">
+                        Discutons de votre projet
+                    </a>
+                </div>
+                <div class="hero-image" style="margin-top: 40px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                        <path fill="#8F66F1"
+                            d="M12.8 32c-.72 0-1.36-.48-1.536-1.184l-1.44-5.264a4.77 4.77 0 0 0-3.376-3.36l-5.264-1.44A1.61 1.61 0 0 1 0 19.2c0-.72.48-1.36 1.184-1.536l5.264-1.44a4.77 4.77 0 0 0 3.36-3.376l1.44-5.264A1.61 1.61 0 0 1 12.8 6.4c.72 0 1.36.48 1.536 1.184l1.44 5.264a4.77 4.77 0 0 0 3.376 3.36l5.264 1.44A1.61 1.61 0 0 1 25.6 19.2c0 .72-.48 1.36-1.184 1.536l-5.264 1.44a4.77 4.77 0 0 0-3.36 3.376l-1.44 5.264A1.61 1.61 0 0 1 12.8 32m12.8-19.2a.79.79 0 0 1-.768-.592l-.72-2.64a2.4 2.4 0 0 0-1.68-1.68l-2.64-.72A.79.79 0 0 1 19.2 6.4c0-.368.24-.672.592-.768l2.64-.72a2.4 2.4 0 0 0 1.68-1.68l.72-2.64A.79.79 0 0 1 25.6 0c.368 0 .672.24.768.592l.72 2.64a2.4 2.4 0 0 0 1.68 1.68l2.64.72c.352.096.592.4.592.768s-.24.672-.592.768l-2.64.72a2.4 2.4 0 0 0-1.68 1.68l-.72 2.64a.79.79 0 0 1-.768.592">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Nos services</h2>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Infrastructure & Cloud</h3>
+                        <p>
+                            Conception, déploiement et gestion d'infrastructures IT performantes et sécurisées.
+                            Solutions cloud hybrides et migraton vers le cloud.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Développement Logiciel</h3>
+                        <p>
+                            Création d'applications sur mesure, solutions ERP/CRM et outils métiers adaptés à vos
+                            besoins spécifiques.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Support & Maintenance</h3>
+                        <p>
+                            Assistance technique, gestion de parc informatique et maintenance proactive pour garantir la
+                            continuité de vos activités.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="services" style="background-color: var(--background-dark);">
+            <div class="container">
+                <div class="hero" style="padding: 0 0;"">
+                    <div class="hero-image">
+                        <img src="assets/illustration.png" alt="Notre équipe" style="width: 75%;">
+                    </div>
+                    <div class="hero-content">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">À propos de nous</h2>
+                        <p>
+                            Novation Labs est une équipe d'experts passionnés par les technologies de l'information.
+                            Forts de plusieurs années d'expérience, nous mettons notre savoir-faire au service de votre
+                            entreprise pour vous accompagner dans votre transformation digitale.
+                        </p>
+                        <p style="margin-top: 20px;">
+                            Notre approche combine expertise technique, innovation et proximité avec nos clients pour
+                            vous proposer des solutions sur mesure adaptées à vos besoins spécifiques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="services">
+            <div class="container">
+                <h2 class="section-title">Contactez-nous</h2>
+
+                <div style="max-width: 600px; margin: 0 auto; background-color: var(--element-dark); padding: 40px; border-radius: 15px;">
+
+                    <form action="https://formspree.io/f/xwpbgvev" method="POST">
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px;">Votre nom</label>
+                            <input type="text" name="name" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background-color: var(--background-dark); color: var(--text-light);">
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px;">Votre email</label>
+                            <input type="email" name="email" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background-color: var(--background-dark); color: var(--text-light);">
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px;">Votre message</label>
+                            <textarea rows="5" name="message" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background-color: var(--background-dark); color: var(--text-light);"></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-button" style="width: 100%; border: none; cursor: pointer;">Envoyer le message</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/NovationLabsLogo512.png" alt="Novation Labs Logo">
+                        <span class="footer-logo-text">Novation Labs</span>
+                    </div>
+                    <a href="mailto:contact@novationlabs.fr" class="footer-contact">contact@novationlabs.fr</a>
+                    <p class="footer-description">
+                        Experts en services informatiques, nous accompagnons les entreprises dans leur transformation
+                        digitale avec des solutions innovantes et sur mesure.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://github.com/NovationLabs" aria-label="GitHub">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                                <path fill-rule="evenodd"
+                                    d="M12.56 0a12.547 12.547 0 0 0-3.967 24.455c.632.116.855-.277.855-.608v-2.134c-3.504.762-4.244-1.687-4.244-1.687a3.36 3.36 0 0 0-1.394-1.84c-1.132-.77.092-.771.092-.771a2.64 2.64 0 0 1 1.918 1.294 2.68 2.68 0 0 0 3.651 1.048c.049-.634.322-1.23.77-1.68-2.788-.315-5.715-1.394-5.715-6.162A4.85 4.85 0 0 1 5.813 8.55a4.58 4.58 0 0 1 .123-3.32s1.055-.339 3.45 1.286a11.87 11.87 0 0 1 6.286 0c2.395-1.625 3.443-1.286 3.443-1.286a4.55 4.55 0 0 1 .154 3.297 4.85 4.85 0 0 1 1.286 3.365c0 4.822-2.935 5.877-5.73 6.162a2.97 2.97 0 0 1 .854 2.311v3.443c0 .408.224.724.863.6A12.548 12.548 0 0 0 12.56 0"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/leogregori" aria-label="LinkedIn">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                                <path
+                                    d="M23.155 0H1.845A1.845 1.845 0 0 0 0 1.845v21.31A1.846 1.846 0 0 0 1.845 25h21.31A1.845 1.845 0 0 0 25 23.154V1.845A1.845 1.845 0 0 0 23.154 0M7.45 21.297H3.693V9.357H7.45zM5.57 7.703a2.158 2.158 0 1 1 2.17-2.156 2.126 2.126 0 0 1-2.17 2.156m15.737 13.604h-3.757v-6.522c0-1.924-.818-2.518-1.874-2.518-1.114 0-2.208.84-2.208 2.566v6.474H9.708V9.367h3.615v1.654h.048c.363-.735 1.634-1.99 3.573-1.99 2.098 0 4.363 1.245 4.363 4.89z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li>
+                                <a href="#services">
+                                    <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor">
+                                        <path d="M9.254 0a4.893 4.893 0 0 1 3.457 8.387L7.12 13.98A3.496 3.496 0 0 1 2.18 9.03L7.773 3.44a2.153 2.153 0 0 1 2.964 0 2.07 2.07 0 0 1 .615 1.481 2.1 2.1 0 0 1-.615 1.492l-5.592 5.59a.69.69 0 0 1-.987 0 .7.7 0 0 1 0-.987l5.59-5.591a.7.7 0 0 0 .234-.54.699.699 0 0 0-1.193-.495L3.197 9.981a2.099 2.099 0 0 0 2.963 2.972l5.592-5.591a3.496 3.496 0 0 0-4.94-4.948l-5.59 5.591a.709.709 0 0 1-1.026-.978l5.591-5.592A4.88 4.88 0 0 1 9.254 0" />
+                                    </svg>
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about">
+                                    <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" fill="currentColor">
+                                        <path d="M6.473 4.954a2.477 2.477 0 1 0 0-4.954 2.477 2.477 0 0 0 0 4.954M10.485 7.421H2.47A2.175 2.175 0 0 0 .295 9.596v.22c0 1.201.974 2.175 2.175 2.175h8.015a2.175 2.175 0 0 0 2.176-2.175v-.22a2.175 2.175 0 0 0-2.176-2.175M11.61 5.931a2.111 2.111 0 1 0 0-4.222 2.111 2.111 0 0 0 0 4.222M13.054 11.37c.39-.405.606-.947.603-1.509a2.13 2.13 0 0 0-.284-1.078.284.284 0 0 1 .229-.43h1.444a1.83 1.83 0 0 1 1.782 1.371 1.83 1.83 0 0 1-.43 1.746 1.7 1.7 0 0 1-1.233.53h-2.093a.274.274 0 0 1-.265-.274.24.24 0 0 1 .082-.192z" />
+                                    </svg>
+                                    À propos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                        <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                                    </svg>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>
+                                <a href="#services">
+                                    <svg class="footer-link-icon"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clip-rule="evenodd" />
+                                    </svg>
+                                    Infrastructure Cloud
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services">
+                                    <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M2.25 5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3V15a3 3 0 0 1-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 0 1-.53 1.28h-9a.75.75 0 0 1-.53-1.28l.621-.622a2.25 2.25 0 0 0 .659-1.59V18h-3a3 3 0 0 1-3-3V5.25Zm1.5 0v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5Z" clip-rule="evenodd" />
+                                    </svg>
+                                    Développement Logiciel
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services">
+                                    <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z" clip-rule="evenodd" />
+                                        <path d="m10.076 8.64-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062 1.575-1.297Z" />
+                                        <path fill-rule="evenodd" d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    Support & Maintenance
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 30px; text-align: center;">
+                <p style="opacity: 0.8; margin: 0;">
+                    © 2025 Novation Labs. Tous droits réservés.
+                </p>
+            </div>
+    </footer>
 </body>
+
 </html>
