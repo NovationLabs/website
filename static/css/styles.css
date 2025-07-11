@@ -34,7 +34,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
 header {
     background-color: var(--background-dark);
     padding: 20px 0;
@@ -106,7 +105,6 @@ nav a:hover {
     color: white;
 }
 
-/* Hero Section */
 .hero {
     padding: 80px 0;
     display: flex;
@@ -155,7 +153,6 @@ nav a:hover {
     height: auto;
 }
 
-/* Services Section */
 .services {
     padding: 50px 0;
     background-color: var(--element-dark);
@@ -204,7 +201,6 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* Clients Section */
 .clients {
     padding: 60px 0;
     text-align: center;
@@ -242,7 +238,6 @@ nav a:hover {
     opacity: 1;
 }
 
-/* Footer */
 footer {
     background-color: var(--element-dark);
     padding: 60px 0 30px;
@@ -345,7 +340,6 @@ footer {
     height: 15px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
 
     .header-container,
