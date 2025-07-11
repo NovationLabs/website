@@ -179,11 +179,6 @@ nav a:hover {
     background-color: var(--background-dark);
     padding: 30px;
     border-radius: 15px;
-    transition: transform 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
 }
 
 .service-icon {
@@ -334,7 +329,7 @@ footer {
     color: var(--text-light);
     text-decoration: none;
     opacity: 0.8;
-    transition: opacity 0.3s;
+    transition: color 0.3s;
     display: flex;
     align-items: center;
     gap: 8px;
