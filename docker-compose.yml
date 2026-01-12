@@ -1,0 +1,7 @@
+services:
+  website:
+    build: .
+    container_name: website
+    ports:
+      - "9998:9998"
+    restart: unless-stopped
