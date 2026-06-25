@@ -4,20 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/static/assets/NovationLabsLogo512.png" type="image/png">
+
     <title>{{ t.site_title }}</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <script src="/static/js/main.js" defer></script>
+    <meta name="description" content="{{ t.hero_description }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://novationlabs.fr">
+    <link rel="icon" href="/static/assets/NovationLabsLogo512.png" type="image/png">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ t.site_title }}">
     <meta property="og:description" content="{{ t.hero_description }}">
-    <meta property="og:image" content="/static/assets/NovationLabsLogo512square.png">
+    <meta property="og:image" content="https://novationlabs.fr/static/assets/NovationLabsLogo512square.png">
     <meta property="og:url" content="https://novationlabs.fr">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:locale" content="{{ 'fr_FR' if t.lang == 'fr' else 'en_US' }}">
+    <meta property="og:site_name" content="Novation Labs">
+
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ t.site_title }}">
     <meta name="twitter:description" content="{{ t.hero_description }}">
-    <meta name="twitter:image" content="/static/assets/NovationLabsLogo512square.png">
+    <meta name="twitter:image" content="https://novationlabs.fr/static/assets/NovationLabsLogo512square.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/main.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Novation Labs",
+        "url": "https://novationlabs.fr",
+        "logo": "https://novationlabs.fr/static/assets/NovationLabsLogo512.png",
+        "email": "contact@novationlabs.fr",
+        "description": "{{ t.hero_description }}",
+        "sameAs": [
+            "https://github.com/NovationLabs",
+            "https://linkedin.com/in/leogregori"
+        ],
+        "offers": [
+            { "@type": "Offer", "name": "{{ t.service_cloud_title }}" },
+            { "@type": "Offer", "name": "{{ t.service_dev_title }}" },
+            { "@type": "Offer", "name": "{{ t.service_support_title }}" }
+        ]
+    }
+    </script>
 </head>
 
 <body class="dark-mode">
@@ -125,7 +156,7 @@
             <div class="container">
                 <div class="about-inner">
                     <div class="about-image">
-                        <img src="/static/assets/illustration.png" alt="Notre équipe">
+                        <img src="/static/assets/illustration.png" alt="Novation Labs team illustration" loading="lazy" width="400" height="400">
                     </div>
                     <div class="about-content">
                         <h2 class="section-title">{{ t.about_title }}</h2>
