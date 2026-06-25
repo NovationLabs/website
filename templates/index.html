@@ -65,8 +65,8 @@
                         {{ t.hero_cta }}
                     </a>
                 </div>
-                <div class="hero-image" style="margin-top: 40px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                <div class="hero-image">
+                    <svg class="hero-decoration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                         <path fill="#8F66F1"
                             d="M12.8 32c-.72 0-1.36-.48-1.536-1.184l-1.44-5.264a4.77 4.77 0 0 0-3.376-3.36l-5.264-1.44A1.61 1.61 0 0 1 0 19.2c0-.72.48-1.36 1.184-1.536l5.264-1.44a4.77 4.77 0 0 0 3.36-3.376l1.44-5.264A1.61 1.61 0 0 1 12.8 6.4c.72 0 1.36.48 1.536 1.184l1.44 5.264a4.77 4.77 0 0 0 3.376 3.36l5.264 1.44A1.61 1.61 0 0 1 25.6 19.2c0 .72-.48 1.36-1.184 1.536l-5.264 1.44a4.77 4.77 0 0 0-3.36 3.376l-1.44 5.264A1.61 1.61 0 0 1 12.8 32m12.8-19.2a.79.79 0 0 1-.768-.592l-.72-2.64a2.4 2.4 0 0 0-1.68-1.68l-2.64-.72A.79.79 0 0 1 19.2 6.4c0-.368.24-.672.592-.768l2.64-.72a2.4 2.4 0 0 0 1.68-1.68l.72-2.64A.79.79 0 0 1 25.6 0c.368 0 .672.24.768.592l.72 2.64a2.4 2.4 0 0 0 1.68 1.68l2.64.72c.352.096.592.4.592.768s-.24.672-.592.768l-2.64.72a2.4 2.4 0 0 0-1.68 1.68l-.72 2.64a.79.79 0 0 1-.768.592">
                         </path>
@@ -121,51 +121,41 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="services" style="background-color: var(--background-dark);">
+        <section id="about" class="about-section">
             <div class="container">
-                <div class="hero" style="padding: 0 0;"">
-                    <div class="hero-image">
-                        <img src="/static/assets/illustration.png" alt="Notre équipe" style="width: 75%;">
+                <div class="about-inner">
+                    <div class="about-image">
+                        <img src="/static/assets/illustration.png" alt="Notre équipe">
                     </div>
-                    <div class="hero-content">
-                        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">{{ t.about_title }}</h2>
-                        <p>
-                            {{ t.about_description_1 }}
-                        </p>
-                        <p style="margin-top: 20px;">
-                            {{ t.about_description_2 }}
-                        </p>
+                    <div class="about-content">
+                        <h2 class="section-title">{{ t.about_title }}</h2>
+                        <p>{{ t.about_description_1 }}</p>
+                        <p>{{ t.about_description_2 }}</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="services">
+        <section id="contact" class="contact-section">
             <div class="container">
                 <h2 class="section-title">{{ t.contact_title }}</h2>
-
-                <div style="max-width: 600px; margin: 0 auto; background-color: var(--element-dark); padding: 40px; border-radius: 15px;">
-
+                <div class="contact-form-wrapper">
                     <form action="https://formspree.io/f/xwpbgvev" method="POST">
-                        <div style="margin-bottom: 20px;">
-                            <label style="display: block; margin-bottom: 8px;">{{ t.contact_name }}</label>
-                            <input type="text" name="name" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background-color: var(--background-dark); color: var(--text-light);">
+                        <div class="form-group">
+                            <label>{{ t.contact_name }}</label>
+                            <input type="text" name="name" required>
                         </div>
-
-                        <div style="margin-bottom: 20px;">
-                            <label style="display: block; margin-bottom: 8px;">{{ t.contact_email }}</label>
-                            <input type="email" name="email" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background-color: var(--background-dark); color: var(--text-light);">
+                        <div class="form-group">
+                            <label>{{ t.contact_email }}</label>
+                            <input type="email" name="email" required>
                         </div>
-
-                        <div style="margin-bottom: 20px;">
-                            <label style="display: block; margin-bottom: 8px;">{{ t.contact_message }}</label>
-                            <textarea rows="5" name="message" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background-color: var(--background-dark); color: var(--text-light);"></textarea>
+                        <div class="form-group">
+                            <label>{{ t.contact_message }}</label>
+                            <textarea rows="5" name="message" required></textarea>
                         </div>
-
-                        <button type="submit" class="cta-button" style="width: 100%; border: none; cursor: pointer;">{{ t.contact_submit }}</button>
+                        <button type="submit" class="cta-button form-submit">{{ t.contact_submit }}</button>
                     </form>
-
                 </div>
             </div>
         </section>
@@ -267,10 +257,8 @@
                     </div>
                 </div>
             </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 30px; text-align: center;">
-                <p style="opacity: 0.8; margin: 0;">
-                    {{ t.footer_copyright }}
-                </p>
+            <div class="footer-bottom">
+                <p>{{ t.footer_copyright }}</p>
             </div>
     </footer>
 </body>

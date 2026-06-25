@@ -40,11 +40,13 @@ document.querySelectorAll('.service-card').forEach(card => {
 // Header scroll effect
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    if (window.scrollY > 100) {
-        header.style.backgroundColor = 'rgba(29, 23, 44, 0.95)';
-        header.style.backdropFilter = 'blur(10px)';
+    if (window.scrollY > 60) {
+        header.style.backgroundColor = 'rgba(29, 23, 44, 0.92)';
+        header.style.backdropFilter = 'blur(12px)';
+        header.classList.add('scrolled');
     } else {
         header.style.backgroundColor = 'var(--background-dark)';
         header.style.backdropFilter = 'none';
+        header.classList.remove('scrolled');
     }
 });
