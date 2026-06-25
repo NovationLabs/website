@@ -35,7 +35,7 @@ async def index(request: Request):
     accept_language = request.headers.get("accept-language", "")
     lang = get_language_from_header(accept_language)
     translation = get_translation(lang)
-    return templates.TemplateResponse("index.html", {"request": request, "t": translation})
+    return templates.TemplateResponse(request, "index.html", {"t": translation})
 
 if __name__ == '__main__':
     uvicorn.run("app:app", host='0.0.0.0', port=9998, reload=True)
